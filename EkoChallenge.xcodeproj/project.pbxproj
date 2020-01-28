@@ -3,27 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DE48C6D20B213C20D187C67 /* Pods_EkoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054C10080309BF825F58D87D /* Pods_EkoChallenge.framework */; };
+		B5038C5123D3A04A00223382 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5038C5023D3A04A00223382 /* User.swift */; };
+		B5038C5423D3A09F00223382 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5038C5323D3A09F00223382 /* CustomTableViewCell.swift */; };
+		B5038C5723D3A18900223382 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5038C5623D3A18900223382 /* Service.swift */; };
+		B5E74DFD23DC348100A12A8F /* LoadingFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E74DFC23DC348100A12A8F /* LoadingFooter.swift */; };
 		B5EB20BF23D37E9B00C6CC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB20BE23D37E9B00C6CC21 /* AppDelegate.swift */; };
 		B5EB20C123D37E9B00C6CC21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB20C023D37E9B00C6CC21 /* SceneDelegate.swift */; };
-		B5EB20C323D37E9B00C6CC21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB20C223D37E9B00C6CC21 /* ViewController.swift */; };
-		B5EB20C623D37E9B00C6CC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EB20C423D37E9B00C6CC21 /* Main.storyboard */; };
-		B5EB20C823D37E9D00C6CC21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EB20C723D37E9D00C6CC21 /* Assets.xcassets */; };
+		B5EB20C323D37E9B00C6CC21 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB20C223D37E9B00C6CC21 /* TableViewController.swift */; };
 		B5EB20CB23D37E9D00C6CC21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EB20C923D37E9D00C6CC21 /* LaunchScreen.storyboard */; };
+		B5EB20D323D37ED600C6CC21 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB20D223D37ED600C6CC21 /* UIView+Anchors.swift */; };
+		B5F103B323D4603400E199B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EB20C723D37E9D00C6CC21 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		054C10080309BF825F58D87D /* Pods_EkoChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EkoChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		134804DCA01D17D732FE743C /* Pods-EkoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkoChallenge.release.xcconfig"; path = "Target Support Files/Pods-EkoChallenge/Pods-EkoChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B5038C5023D3A04A00223382 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B5038C5323D3A09F00223382 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		B5038C5623D3A18900223382 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B5E74DFC23DC348100A12A8F /* LoadingFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFooter.swift; sourceTree = "<group>"; };
 		B5EB20BB23D37E9B00C6CC21 /* EkoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EkoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EB20BE23D37E9B00C6CC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5EB20C023D37E9B00C6CC21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5EB20C223D37E9B00C6CC21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5EB20C523D37E9B00C6CC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5EB20C223D37E9B00C6CC21 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B5EB20C723D37E9D00C6CC21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5EB20CA23D37E9D00C6CC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5EB20CC23D37E9D00C6CC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5EB20D223D37ED600C6CC21 /* UIView+Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
+		F0D59DCAE29B47057428800A /* Pods-EkoChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkoChallenge.debug.xcconfig"; path = "Target Support Files/Pods-EkoChallenge/Pods-EkoChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,78 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE48C6D20B213C20D187C67 /* Pods_EkoChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58BD1FA084EB7173BAC30A97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				054C10080309BF825F58D87D /* Pods_EkoChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63054EAF3B3BFE6062B6B2DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0D59DCAE29B47057428800A /* Pods-EkoChallenge.debug.xcconfig */,
+				134804DCA01D17D732FE743C /* Pods-EkoChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5038C4D23D3A00F00223382 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB20C223D37E9B00C6CC21 /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5038C4E23D3A01F00223382 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB20D223D37ED600C6CC21 /* UIView+Anchors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5038C4F23D3A02E00223382 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5038C5023D3A04A00223382 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5038C5223D3A06300223382 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5038C5323D3A09F00223382 /* CustomTableViewCell.swift */,
+				B5E74DFC23DC348100A12A8F /* LoadingFooter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5038C5523D3A0E700223382 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B5038C5623D3A18900223382 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		B5EB20B223D37E9B00C6CC21 = {
 			isa = PBXGroup;
 			children = (
 				B5EB20BD23D37E9B00C6CC21 /* EkoChallenge */,
 				B5EB20BC23D37E9B00C6CC21 /* Products */,
+				63054EAF3B3BFE6062B6B2DD /* Pods */,
+				58BD1FA084EB7173BAC30A97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +129,13 @@
 		B5EB20BD23D37E9B00C6CC21 /* EkoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B5038C5523D3A0E700223382 /* Service */,
+				B5038C5223D3A06300223382 /* View */,
+				B5038C4F23D3A02E00223382 /* Model */,
+				B5038C4E23D3A01F00223382 /* Extensions */,
+				B5038C4D23D3A00F00223382 /* Controller */,
 				B5EB20BE23D37E9B00C6CC21 /* AppDelegate.swift */,
 				B5EB20C023D37E9B00C6CC21 /* SceneDelegate.swift */,
-				B5EB20C223D37E9B00C6CC21 /* ViewController.swift */,
-				B5EB20C423D37E9B00C6CC21 /* Main.storyboard */,
 				B5EB20C723D37E9D00C6CC21 /* Assets.xcassets */,
 				B5EB20C923D37E9D00C6CC21 /* LaunchScreen.storyboard */,
 				B5EB20CC23D37E9D00C6CC21 /* Info.plist */,
@@ -74,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5EB20CF23D37E9D00C6CC21 /* Build configuration list for PBXNativeTarget "EkoChallenge" */;
 			buildPhases = (
+				F6766C47D5399083BE31898E /* [CP] Check Pods Manifest.lock */,
 				B5EB20B723D37E9B00C6CC21 /* Sources */,
 				B5EB20B823D37E9B00C6CC21 /* Frameworks */,
 				B5EB20B923D37E9B00C6CC21 /* Resources */,
+				15082B23B9786D65210A05AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,21 +203,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F103B323D4603400E199B1 /* Assets.xcassets in Resources */,
 				B5EB20CB23D37E9D00C6CC21 /* LaunchScreen.storyboard in Resources */,
-				B5EB20C823D37E9D00C6CC21 /* Assets.xcassets in Resources */,
-				B5EB20C623D37E9B00C6CC21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15082B23B9786D65210A05AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EkoChallenge/Pods-EkoChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EkoChallenge/Pods-EkoChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EkoChallenge/Pods-EkoChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6766C47D5399083BE31898E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EkoChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5EB20B723D37E9B00C6CC21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EB20C323D37E9B00C6CC21 /* ViewController.swift in Sources */,
+				B5038C5423D3A09F00223382 /* CustomTableViewCell.swift in Sources */,
+				B5038C5723D3A18900223382 /* Service.swift in Sources */,
+				B5EB20C323D37E9B00C6CC21 /* TableViewController.swift in Sources */,
+				B5E74DFD23DC348100A12A8F /* LoadingFooter.swift in Sources */,
+				B5EB20D323D37ED600C6CC21 /* UIView+Anchors.swift in Sources */,
 				B5EB20BF23D37E9B00C6CC21 /* AppDelegate.swift in Sources */,
+				B5038C5123D3A04A00223382 /* User.swift in Sources */,
 				B5EB20C123D37E9B00C6CC21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +271,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5EB20C423D37E9B00C6CC21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5EB20C523D37E9B00C6CC21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5EB20C923D37E9D00C6CC21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,11 +398,13 @@
 		};
 		B5EB20D023D37E9D00C6CC21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D59DCAE29B47057428800A /* Pods-EkoChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FCQA3D4ES5;
 				INFOPLIST_FILE = EkoChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +418,13 @@
 		};
 		B5EB20D123D37E9D00C6CC21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134804DCA01D17D732FE743C /* Pods-EkoChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FCQA3D4ES5;
 				INFOPLIST_FILE = EkoChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
