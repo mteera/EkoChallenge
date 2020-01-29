@@ -7,10 +7,9 @@
 //
 
 import Foundation
-
+// Using typealias better readability
 typealias JSON = [String:Any]
-
-
+// Sructs over Class as it is a simple data type and does not require any inheriting.
 struct User {
     var id: Int
     var login: String
@@ -34,19 +33,3 @@ struct User {
     
 }
 
-
-struct ResultDTO: Codable {
-    var isFavourite: Bool?
-    
-
-}
-
-class Result: Decodable {
-    var url: String { return _url ?? "Default Appleseed" }
-
-    private var _url: String?
-
-    enum CodingKeys: String, CodingKey {
-        case _url = "url"
-    }
-}
