@@ -21,11 +21,8 @@ class TableViewController: UITableViewController {
         return aiv
     }()
     
-    lazy var footerView: UIView = {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        view.backgroundColor = UIColor.red
-        return view
-    }()
+    
+
 
     
     fileprivate var cellId = "cell"
@@ -42,8 +39,9 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.addSubview(activityIndicatorView)
-
         activityIndicatorView.centerInSuperview()
+
+        tableView.separatorColor = .clear
 
         registerCells()
             
@@ -59,6 +57,8 @@ class TableViewController: UITableViewController {
                 self.usersSince = lastUserId
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                    self.tableView.separatorColor = .systemGray4
+
                     self.activityIndicatorView.stopAnimating()
                     self.tableView.reloadData()
                     self.loaded = true
@@ -67,9 +67,6 @@ class TableViewController: UITableViewController {
 
             }
         }
-    
-
-    
 
     fileprivate func registerCells() {
         tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: cellId)
@@ -107,21 +104,31 @@ class TableViewController: UITableViewController {
        
     }
     
-//     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        let lastSectionIndex = tableView.numberOfSections - 1
-//        let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
-//        if indexPath.section ==  lastSectionIndex && indexPath.row == lastRowIndex {
-//            let spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
-//            spinner.startAnimating()
-//            spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: tableView.bounds.width, height: CGFloat(44))
-//
-//
-//            self.tableView.tableFooterView = spinner
-//            self.tableView.tableFooterView?.isHidden = isDonePaginating ? true : false
-//
-//            beginBatchFetch()
-//        }
-//    }
+     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let lastSectionIndex = tableView.numberOfSections - 1
+        let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
+        if indexPath.section ==  lastSectionIndex && indexPath.row == lastRowIndex {
+            let spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+            spinner.startAnimating()
+            spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: tableView.bounds.width, height: CGFloat(44))
+            let titleLabel = UILabel(text: "Loading more...", font: .systemFont(ofSize: 16))
+
+            let stackView = UIStackView(arrangedSubviews: [spinner, titleLabel], customSpacing: 8)
+            stackView.axis = .vertical
+            stackView.translatesAutoresizingMaskIntoConstraints = false
+    
+    
+            tableView.tableFooterView = stackView
+    
+            stackView.centerInSuperview()
+
+
+            self.tableView.tableFooterView = spinner
+            self.tableView.tableFooterView?.isHidden = isDonePaginating ? true : false
+
+            beginBatchFetch()
+        }
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
@@ -134,18 +141,7 @@ class TableViewController: UITableViewController {
         cell.indexPath = indexPath
         let user = self.users[indexPath.row]
         cell.user = user
-        
-        if self.users.count  > 1 {
-            let lastElement = self.users.count - 10
-            if indexPath.row == lastElement && !isPaginating {
-                //call get api for next page
-                beginBatchFetch()
-            }
-        }
-        
-  
-        self.isPaginating = false
-        
+
         return cell
     }
     

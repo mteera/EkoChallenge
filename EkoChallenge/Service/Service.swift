@@ -43,8 +43,9 @@ class Service {
     func getUsers(usersSince: Int, perPage: Int, completion: @escaping ([User]?, _ lastUserId: Int?,
         Error?)-> Void) {
 
-        if let url = URL(string: "https://api.github.com/users?since=\(usersSince)&per_page=\(perPage)") {
+        if let url = URL(string: "https://api.github.com/users?since=0&per_page=20") {
            URLSession.shared.dataTask(with: url) { data, response, error in
+            
               if let data = data {
                   do {
                     guard let jsonArray = try JSONSerialization.jsonObject(with: data, options: []) as? [JSON] else { return }
@@ -62,9 +63,11 @@ class Service {
                     
                     completion(users, lastUserId, nil)
                   } catch {
+                    
                     completion(nil, nil, error)
                   }
                }
+            
             completion(nil, nil, error)
 
            }.resume()
