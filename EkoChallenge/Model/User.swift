@@ -25,7 +25,7 @@ struct User {
         self.id = json["id"] as! Int
         self.login = json["login"] as! String
         self.avatarUrl = json["avatar_url"] as! String
-        self.url = json["url"] as! String
+        self.url = json["html_url"] as! String
         self.type = json["type"] as! String
         self.siteAdmin = json["site_admin"] as! Bool
         self.isFavourite = isFavourite

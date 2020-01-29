@@ -54,7 +54,6 @@ class Service {
 
                     jsonArray.forEach { (json) in
                         let user = User(json: json)
-                        print(user.id)
                         users.append(user)
                     }
                     
@@ -74,6 +73,5 @@ class Service {
         }
 
     }
-
     
 }

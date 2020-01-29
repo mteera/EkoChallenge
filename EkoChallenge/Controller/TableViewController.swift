@@ -139,14 +139,27 @@ class TableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? CustomTableViewCell else { fatalError("Failed to initialise CustomTableViewCell")}
         cell.delegate = self
         cell.indexPath = indexPath
-        let user = self.users[indexPath.row]
+        var user = self.users[indexPath.row]
+        
+        
+        let defaults = UserDefaults.standard
+        if defaults.object(forKey: "savedFavourite\(user.id)") != nil {
+            user.isFavourite = true
+        }
+
         cell.user = user
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = self.users[indexPath.row]
+        let url = URL(string: user.url)!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -160,8 +173,19 @@ extension TableViewController: CustomTableViewCellDelegate {
 
     
     func handleFavourite(_ user: User, indexPath: IndexPath) {
+        
+        
+
+
+        let defaults = UserDefaults.standard
 
         let isFavourite = user.isFavourite
+        
+        if !isFavourite {
+            defaults.set(user.id, forKey: "savedFavourite\(user.id)")
+        } else {
+            defaults.removeObject(forKey: "savedFavourite\(user.id)")
+        }
         self.users[indexPath.item].isFavourite = !isFavourite
         self.tableView.reloadData()
 
